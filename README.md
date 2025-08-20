@@ -1,33 +1,49 @@
+# 🌍 Trail For Wanderers
 
-# Trail For Wanderers — Render One‑Click Deploy
+Trail For Wanderers is a tourism website similar to Google Maps that helps you explore countries, states, and cities worldwide.  
+It provides:
+- ✨ List of attractions (parks, museums, libraries, restaurants, etc.)
+- 🍴 Famous local foods
+- 🏨 Hotel suggestions with price ranges (no booking)
+- ☀️ Weather alerts & best seasons to visit
+- 🖼️ Custom logo & branding
 
-This repo is configured for **Render** free tier. It deploys **two web services**:
+This project is powered by:
+- **Java** (backend service for places, foods, hotels, weather, etc.)
+- **Python Flask** (frontend web app with UI/UX)
+- **HTML, CSS** (UI styling)
+- Deployed for free on **Render** using `render.yaml`.
 
-1. **trail-java-service** — Java microservice (serves data)
-2. **trail-for-wanderers** — Python Flask app (UI)
+---
 
-## Deploy (Blueprint)
+## 🚀 Live Demo
+Once deployed via Render, your site will be available at:
 
-1) Push this folder to a new **GitHub repo** named `trail-for-wanderers`.
-2) Go to https://dashboard.render.com → **New** → **Blueprint**.
-3) Connect your repo. Render will detect `render.yaml` and create **both** services.
-4) Click **Apply** / **Deploy**.
-5) After deploy, your site URL will be like `https://trail-for-wanderers.onrender.com`.
 
-### Logo
-Place your logo file at `python_ui/static/images/logo.png` (replace the placeholder).
+---
 
-### Local Dev
-- Java service:
-  ```bash
-  cd java_service
-  javac PlacesService.java
-  java PlacesService
-  ```
-- Python UI:
-  ```bash
-  cd python_ui
-  python -m venv .venv && . .venv/bin/activate
-  pip install -r requirements.txt
-  python app.py
-  ```
+## 🗂 Project Structure
+
+
+---
+
+## 🛠️ Local Development
+
+### 1. Run the Java backend
+```bash
+cd java_service
+javac PlacesService.java
+java PlacesService   # runs on http://localhost:8080
+
+cd python_ui
+python -m venv .venv
+source .venv/bin/activate   # (use .venv\Scripts\activate on Windows)
+pip install -r requirements.txt
+export DATA_SERVICE_BASE=http://localhost:8080  # (setenv in Windows: set DATA_SERVICE_BASE=...)
+python app.py   # runs on http://localhost:5000
+
+python_ui/static/images/logo.png
+
+
+---
+
