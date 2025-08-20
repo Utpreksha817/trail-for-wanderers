@@ -15,4 +15,7 @@ services:
     startCommand: gunicorn app:app --bind=0.0.0.0:$PORT
     envVars:
       - key: DATA_SERVICE_BASE
-        fromService: trail-java-service
+        fromService:
+          type: web
+          name: trail-java-service
+
