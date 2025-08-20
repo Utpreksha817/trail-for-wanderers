@@ -1,0 +1,21 @@
+
+services:
+  - type: web
+    name: trail-java-service
+    env: docker
+    plan: free
+    rootDir: java_service
+    dockerfilePath: Dockerfile
+
+  - type: web
+    name: trail-for-wanderers
+    env: python
+    plan: free
+    rootDir: python_ui
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind=0.0.0.0:$PORT
+    envVars:
+      - key: DATA_SERVICE_BASE
+        fromService:
+          name: trail-java-service
+          type: web

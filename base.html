@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ brand }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="container row">
+      <div class="brand">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="{{ brand }} logo" class="logo">
+        <span>{{ brand }}</span>
+      </div>
+      <div class="note">MVP • Demo Data</div>
+    </div>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="footer container">
+    Prototype • Replace mock data with live APIs for production.
+  </footer>
+</body>
+</html>

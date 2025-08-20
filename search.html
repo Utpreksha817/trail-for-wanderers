@@ -1,0 +1,130 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <section class="card p-lg mt-md">
+    <form method="get" action="/search" class="grid-4 gap-sm">
+      <label class="field">
+        <span class="label">Country</span>
+        <input name="country" class="input" placeholder="e.g., India, USA, Japan" value="{{ form.country or '' }}">
+      </label>
+      <label class="field">
+        <span class="label">State / Province</span>
+        <input name="state" class="input" placeholder="e.g., Maharashtra, California" value="{{ form.state or '' }}">
+      </label>
+      <label class="field">
+        <span class="label">City</span>
+        <input name="city" class="input" placeholder="e.g., Mumbai, San Francisco, Tokyo" value="{{ form.city or '' }}">
+      </label>
+      <div class="field end">
+        <button class="btn btn-primary w-100">Search</button>
+      </div>
+      <div class="field col-span-4 mt-xs">
+        <span class="chip">Max price filter (server-side):</span>
+        <input type="number" min="10" max="500" step="10" name="price_max" class="input w-200" value="{{ price_max or '' }}" placeholder="e.g., 150">
+        {% if results %}
+          <span class="chip">Location: {{ results.displayName }}</span>
+        {% endif %}
+      </div>
+    </form>
+    {% if error %}
+      <div class="alert error mt-sm">{{ error }}</div>
+    {% endif %}
+  </section>
+
+  {% if not results %}
+    <section class="card center p-xl mt-md">
+      <h2>Search a city to get started</h2>
+      <p class="muted">Try: <b>India</b>, <b>Maharashtra</b>, <b>Mumbai</b></p>
+    </section>
+  {% else %}
+    <div class="grid-3 gap-md mt-md">
+      <div class="col-span-2">
+        <section class="card p-md">
+          <h3 class="section-title">Top Attractions</h3>
+          <div class="grid-2 gap-sm mt-sm">
+            {% for a in results.attractions %}
+              <div class="card p-sm">
+                <div class="row space-between">
+                  <div>
+                    <div class="title">{{ a.name }}</div>
+                    <div class="muted">{{ a.desc }}</div>
+                  </div>
+                  <div class="rating" title="Rating {{ '%.1f'|format(a.rating) }}">
+                    {% for i in range(5) %}
+                      <span class="star {{ 'on' if i < (a.rating|round(0,'common')) else '' }}">★</span>
+                    {% endfor %}
+                    <span class="muted small">{{ '%.1f'|format(a.rating) }}</span>
+                  </div>
+                </div>
+                <div class="tags mt-xs">
+                  <span class="badge">{{ a.type }}</span>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="card p-md mt-md">
+          <h3 class="section-title">Famous Foods</h3>
+          <div class="grid-2 gap-sm mt-sm">
+            {% for f in results.foods %}
+              <div class="card p-sm">
+                <div class="title">{{ f.name }}</div>
+                <div class="muted">{{ f.blurb }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="card p-md mt-md">
+          <div class="row space-between">
+            <h3 class="section-title">Places to Stay</h3>
+            <span class="badge">{{ results.hotels|length }} options</span>
+          </div>
+          <div class="grid-2 gap-sm mt-sm">
+            {% for h in results.hotels %}
+              <div class="card p-sm">
+                <div class="row space-between">
+                  <div>
+                    <div class="title">{{ h.name }}</div>
+                    <div class="muted">★ {{ h.stars }} • ${{ h.price }} / night</div>
+                  </div>
+                  <a class="btn link" href="{{ h.link }}" target="_blank" rel="noreferrer">View</a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card p-md">
+          <h3 class="section-title">Weather & Seasons</h3>
+          {% if results.weatherAlerts and results.weatherAlerts|length %}
+            {% for w in results.weatherAlerts %}
+              <div class="alert {{ 'warn' if w.severity == 'warning' else 'info' }} mt-xs">
+                <div class="title">{{ w.title }}</div>
+                <div class="muted small">{{ w.detail }}</div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="muted">No active alerts.</div>
+          {% endif %}
+          <div class="mt-sm">
+            <div class="label bold">Best time to visit</div>
+            <div>{{ results.bestSeason }}</div>
+          </div>
+        </section>
+
+        <section class="card p-md mt-md">
+          <h3 class="section-title">Quick Tips</h3>
+          <ul class="list">
+            <li>Use the price input to filter hotels server-side.</li>
+            <li>Results are demo-only; add real data in the Java service.</li>
+            <li>Bookmark result pages with URL parameters.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  {% endif %}
+{% endblock %}
