@@ -45,34 +45,6 @@ trail-for-wanderers/
 
 ---
 
-## 🚀 How to Run
-
-### Option 1 — Open Locally (Quickest)
-1. Download both `index.html` and `state.html` into the same folder
-2. Open `index.html` in any browser
-3. Click any state to see its detail page
-
-### Option 2 — VS Code Live Server
-1. Install [VS Code](https://code.visualstudio.com/)
-2. Install the **Live Server** extension
-3. Open the project folder in VS Code
-4. Right-click `index.html` → **Open with Live Server**
-5. Site runs at `http://127.0.0.1:5500`
-
-### Option 3 — Deploy Free on GitHub Pages
-1. Push both files to a GitHub repository
-2. Go to **Settings → Pages**
-3. Set source to `main` branch → Save
-4. Your site goes live at `https://YOUR_USERNAME.github.io/trail-for-wanderers`
-
-### Option 4 — Deploy Free on Vercel
-1. Push files to GitHub
-2. Log in at [vercel.com](https://vercel.com) with GitHub
-3. Import the repository → Deploy
-4. Get a live URL like `trail-for-wanderers.vercel.app`
-
----
-
 ## 🛠️ Tech Stack
 
 | Technology | Usage |
