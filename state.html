@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderers | Destination Profile</title>
+    <!-- Premium Typography Embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="state-profile-page">
+
+    <!-- Premium Sticky Glassmorphic Navbar -->
+    <header class="navbar navbar-solid">
+        <a href="index.html" class="logo text-decoration-none">WANDERERS</a>
+        <a href="index.html" class="btn-secondary-nav">← Go Back Home</a>
+    </header>
+
+    <main class="state-main-wrapper">
+        <!-- Cinematic Hero Header Section -->
+        <section class="state-hero-banner">
+            <div class="hero-bg-overlay-deep"></div>
+            <!-- Hidden fallback hook for browser title updates managed via JS -->
+            <span id="state-title" style="display: none;">State</span> 
+            
+            <div class="state-hero-content animate-fade-up">
+                <span class="hero-tagline">REGIONAL PROFILE</span>
+                <h1 id="dynamic-heading">Explore State Details</h1>
+                <p id="dynamic-description">Loading destination profiles...</p>
+            </div>
+        </section>
+
+        <!-- Two-Column Premium Analytics Layout -->
+        <div class="detail-layout">
+            
+            <!-- Left Panel: District Engine -->
+            <div class="glass-panel main-content-card animate-fade-up">
+                <div class="card-header-premium">
+                    <span class="accent-badge">TERRITORIAL COMPASS</span>
+                    <h2>Available Regional Districts</h2>
+                </div>
+                <p class="panel-instruction-text">Select an individual district below to access localized historic routes, real food recommendations, and boutique stays built dynamically into our regional database.</p>
+                
+                <div class="collapsible-container">
+                    <!-- Legacy Interactive Dynamic Action Button Hook -->
+                    <button id="districtBtn" class="btn-action-premium" onclick="toggleDistricts()">
+                        <span class="btn-text">Browse <span id="btn-state-name">State</span> Districts</span>
+                        <span class="chevron-icon">▼</span>
+                    </button>
+                    
+                    <!-- Legacy Dynamic Injection Target Grid -->
+                    <div id="districtGrid" class="district-grid-wrapper hidden">
+                        <!-- Loaded dynamically via JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Premium Static Feature Grid Injection (Visual Enhancements) -->
+                <div class="premium-highlights-grid">
+                    <div class="highlight-item">
+                        <div class="icon">🏛️</div>
+                        <h4>Cultural Legacy</h4>
+                        <p>Curated architecture networks mapped precisely across every municipal division.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="icon">🍲</div>
+                        <h4>Native Profiles</h4>
+                        <p>Authentic gastronomic specialties verified by regional travel chronicles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Weather Data Panel Widget -->
+            <aside class="glass-panel weather-card sticky-sidebar animate-fade-up">
+                <div class="weather-header-premium">
+                    <div class="header-titles">
+                        <span class="realtime-badge">REAL-TIME TELEMETRY</span>
+                        <h3>Live Capital Weather</h3>
+                    </div>
+                    <div class="satellite-dish-icon"></div>
+                </div>
+                
+                <!-- Legacy Dynamic Telemetry Target Status -->
+                <div id="weather-loading" class="telemetry-syncing-text">Syncing with satellite telemetry...</div>
+                
+                <!-- Legacy Dynamic Visibility Component -->
+                <div id="weather-display" class="hidden weather-stats-wrapper">
+                    <div class="temperature-showcase">
+                        <span id="wx-temp" class="temp-number">--</span><span class="degree-symbol">°C</span>
+                    </div>
+                    
+                    <div id="wx-desc" class="weather-description-badge">--</div>
+                    
+                    <div class="weather-grid-metrics">
+                        <div class="metric-box">
+                            <span class="metric-label">HUMIDITY</span>
+                            <span class="metric-value"><strong id="wx-humidity">--</strong>%</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-label">WIND SPEED</span>
+                            <span class="metric-value"><strong id="wx-wind">--</strong> m/s</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+        </div>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Trail for Wanderers. Executed with high-tier layout engineering.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

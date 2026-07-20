@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail for Wanderers | Luxury Indian Journeys</title>
+    <!-- Premium Typography Embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Premium Sticky Glassmorphic Navbar -->
+    <header class="navbar">
+        <div class="logo">Trail for Wanderers</div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="#explore" class="nav-link">Destinations</a>
+            <a href="#experiences" class="nav-link">Experiences</a>
+            <a href="#newsletter" class="nav-link">Subscribe</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Cinematic Full-Viewport Hero Section (100vh) -->
+        <section class="hero-container">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-tagline animate-fade-up">EXCLUSIVE INDIAN ESCAPES</span>
+                <h1 class="animate-fade-up">Explore India's States & Union Territories</h1>
+                <p class="animate-fade-up">Immerse yourself in sublime landscapes, cultural legacies, and curated regional paths with live environment monitoring.</p>
+                
+                <div class="hero-ctas animate-fade-up">
+                    <a href="#explore" class="btn-primary">Begin Exploration</a>
+                    <a href="#experiences" class="btn-secondary">Watch Showcase</a>
+                </div>
+            </div>
+
+            <!-- Floating Search Card Concept Component -->
+            <div class="floating-search-card animate-fade-up">
+                <div class="search-field">
+                    <label>Where next?</label>
+                    <input type="text" placeholder="Search states or regions..." disabled style="cursor: not-allowed; opacity: 0.7;">
+                </div>
+                <div class="search-field">
+                    <label>Season</label>
+                    <span class="field-value">Optimal Window</span>
+                </div>
+                <button class="search-btn" onclick="document.getElementById('explore').scrollIntoView({behavior: 'smooth'});">Scan Atlas</button>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="mouse-wheel"></span>
+                <span class="scroll-text">Scroll to Immerse</span>
+            </div>
+        </section>
+
+        <!-- Premium Utility Branding Section -->
+        <section class="branding-strip">
+            <div class="strip-container">
+                <span>AUTHENTICITY</span>
+                <span class="dot"></span>
+                <span>HERITAGE MODERNIZED</span>
+                <span class="dot"></span>
+                <span>CURATED ESCAPES</span>
+                <span class="dot"></span>
+                <span>LIVE TELEMETRY</span>
+            </div>
+        </section>
+
+        <!-- Primary Showcase Section -->
+        <section id="explore" class="showcase-section">
+            <div class="section-header">
+                <span class="section-subtitle">CURATED COLLECTION</span>
+                <h2 class="section-title">Grand Regions & Sovereign Territories</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Legacy Trigger Grid mapping directly to main.js keys -->
+            <div class="card-grid">
+                <!-- === 28 STATES === -->
+                <div class="card" data-state="andhra_pradesh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Andhra Pradesh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Andhra Pradesh</h3>
+                        <p>The Sunrise State</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+                
+                <div class="card" data-state="arunachal_pradesh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Arunachal Pradesh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Arunachal Pradesh</h3>
+                        <p>Land of the Rising Sun</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="assam">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1596117564177-3e589ee8bdff?auto=format&fit=crop&w=800&q=80" alt="Assam" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Assam</h3>
+                        <p>The Tea Garden of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="bihar">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1593181629936-11c60994a9a5?auto=format&fit=crop&w=800&q=80" alt="Bihar" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Bihar</h3>
+                        <p>Land of Viharas</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="chhattisgarh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=800&q=80" alt="Chhattisgarh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chhattisgarh</h3>
+                        <p>The Rice Bowl of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="goa">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Goa</h3>
+                        <p>The Pearl of the Orient</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="gujarat">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599939575326-0c15984639b8?auto=format&fit=crop&w=800&q=80" alt="Gujarat" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Gujarat</h3>
+                        <p>Land of Legends</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="haryana">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Haryana" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Haryana</h3>
+                        <p>The Abode of God</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="himachal_pradesh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" alt="Himachal Pradesh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Himachal Pradesh</h3>
+                        <p>The Land of Snow</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="jharkhand">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1595238600818-d682496a7233?auto=format&fit=crop&w=800&q=80" alt="Jharkhand" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Jharkhand</h3>
+                        <p>The Land of Forests</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="karnataka">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600100397608-f010b423b971?auto=format&fit=crop&w=800&q=80" alt="Karnataka" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Karnataka</h3>
+                        <p>One State, Many Worlds</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="kerala">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Kerala</h3>
+                        <p>God's Own Country</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="madhya_pradesh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599939575326-0c15984639b8?auto=format&fit=crop&w=800&q=80" alt="Madhya Pradesh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Madhya Pradesh</h3>
+                        <p>The Heart of Incredible India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="maharashtra">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1562391768-4ebbc64a814d?auto=format&fit=crop&w=800&q=80" alt="Maharashtra" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Maharashtra</h3>
+                        <p>The Gateway of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="manipur">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Manipur" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Manipur</h3>
+                        <p>The Jewel of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="meghalaya">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=800&q=80" alt="Meghalaya" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Meghalaya</h3>
+                        <p>The Abode of Clouds</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="mizoram">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Mizoram" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mizoram</h3>
+                        <p>Land of the Hill People</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="nagaland">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=800&q=80" alt="Nagaland" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Nagaland</h3>
+                        <p>Land of Festivals</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="odisha">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1599939575326-0c15984639b8?auto=format&fit=crop&w=800&q=80" alt="Odisha" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Odisha</h3>
+                        <p>The Soul of Incredible India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="punjab">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1601919051950-bb9f3ffb3fee?auto=format&fit=crop&w=800&q=80" alt="Punjab" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Punjab</h3>
+                        <p>The Land of Five Rivers</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="rajasthan">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1477587458883-471a5ed94245?auto=format&fit=crop&w=800&q=80" alt="Rajasthan" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Rajasthan</h3>
+                        <p>The Royal Desert</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="sikkim">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589553460732-5967c0e55130?auto=format&fit=crop&w=800&q=80" alt="Sikkim" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Sikkim</h3>
+                        <p>Valley of Rice</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="tamil_nadu">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Tamil Nadu" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tamil Nadu</h3>
+                        <p>Land of Temples</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="telangana">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600100397608-f010b423b971?auto=format&fit=crop&w=800&q=80" alt="Telangana" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Telangana</h3>
+                        <p>The Seed Bowl of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="tripura">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Tripura" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tripura</h3>
+                        <p>The Land of Handloom</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="uttar_pradesh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Uttar Pradesh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Uttar Pradesh</h3>
+                        <p>The Heartland of Culture</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="uttarakhand">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?auto=format&fit=crop&w=800&q=80" alt="Uttarakhand" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Uttarakhand</h3>
+                        <p>Devbhumi - Land of Gods</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="west_bengal">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=800&q=80" alt="West Bengal" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>West Bengal</h3>
+                        <p>The Sweetest Part of India</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <!-- === 8 UNION TERRITORIES === -->
+                <div class="card" data-state="andaman_nicobar">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589553460732-5967c0e55130?auto=format&fit=crop&w=800&q=80" alt="Andaman & Nicobar" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Andaman & Nicobar</h3>
+                        <p>Emerald Islands</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="chandigarh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1601919051950-bb9f3ffb3fee?auto=format&fit=crop&w=800&q=80" alt="Chandigarh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Chandigarh</h3>
+                        <p>The City Beautiful</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="dadra_nagar_daman_diu">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Dadra & Nagar Haveli and Daman & Diu" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Dadra & Nagar Haveli and Daman & Diu</h3>
+                        <p>Coastal Heritage</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="delhi">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80" alt="Delhi" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Delhi</h3>
+                        <p>The Heart of the Nation</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="jammu_kashmir">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?auto=format&fit=crop&w=800&q=80" alt="Jammu & Kashmir" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Jammu & Kashmir</h3>
+                        <p>Paradise on Earth</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="ladakh">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1596117564177-3e589ee8bdff?auto=format&fit=crop&w=800&q=80" alt="Ladakh" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Ladakh</h3>
+                        <p>The Land of High Passes</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="lakshadweep">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Lakshadweep" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Lakshadweep</h3>
+                        <p>Coral Paradise</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+
+                <div class="card" data-state="puducherry">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1589553460732-5967c0e55130?auto=format&fit=crop&w=800&q=80" alt="Puducherry" class="card-bg">
+                        <div class="card-gradient"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Puducherry</h3>
+                        <p>The French Riviera of the East</p>
+                        <span class="card-action-link">Explore Realm →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer Structure -->
+    <footer class="premium-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Trail for Wanderers. Executed with high-tier layout engineering.</p>
+        </div>
+    </footer>
+    <!-- 1. Load secret config first (ignored by git) -->
+    <script src="config.js"></script>
+    
+    <!-- 2. Load main logic second -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
